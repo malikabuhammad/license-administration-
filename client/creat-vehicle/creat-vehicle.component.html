@@ -1,0 +1,97 @@
+<div class='loader'>
+    <div class='spinner-grow text-primary' role='status'>
+        <span class='sr-only'>Loading...</span>
+    </div>
+</div>
+  <div class="connect-container align-content-stretch d-flex flex-row">
+    <div class="page-container">
+      <div class="page-header">
+        <app-user-navbar></app-user-navbar>
+      </div>
+        <div class="page-content">
+          <div class="page-info">
+            <div class="main-wrapper" style="margin-right: 25%;">
+           
+                <form [formGroup]="formGroup" class="formContainer">
+                    <div class="row">
+                    <div class="col">
+                      <label style="color:gray">Vehicle Number</label>
+                       <input  matInput formControlName="vehicleNumber" type="text" class="form-control" placeholder="VehicleNumber">
+                    </div>
+                    <div class="col">
+                      <label style="color:gray">Vehicle Payload</label>
+                       <input matInput formControlName="vehiclePayload" type="text" class="form-control" placeholder="VehiclePayload">
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col">
+                      <label style="color:gray">Number Of Passengers</label>
+                       <input type="text" formControlName="numberOfPassengers" class="form-control" placeholder="NumberOfPassengers">
+                    </div>
+                    <div class="col">
+                      <label style="color:gray"> vehicle Type </label>
+                        <mat-select matInput formControlName="vehicleTypeId" class="form-control custom-select" >
+                            <mat-option  *ngFor="let VehicleType of VehicleTypes" [value]="VehicleType"> {{VehicleType}}</mat-option>
+                        </mat-select>
+                    
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                      <label style="color:gray"> Structure Number </label>
+                       <input type="text" formControlName="structureNo" class="form-control" placeholder="StructureNo">
+                    </div>
+                    <div class="col">
+                      <label style="color:gray">Engien  Number </label>
+                       <input type="text" formControlName="engineNumber" class="form-control" placeholder="EngineNumber">
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                      <label style="color:gray"> Date Of License</label>
+                       <input type="date" formControlName="dateOfLicense" class="form-control" placeholder="DateOfLicense">
+                    </div>
+                    <div class="col">
+                      <label style="color:gray"> Vehicle Color </label>
+                       <input type="text" formControlName="vehicleColor" class="form-control" placeholder="VehicleColor">
+                    </div>
+                    </div>
+                    <div class="row">
+            
+                    <div class="col">
+                      <label style="color:gray"> Vehicle Status </label>
+                       <mat-select matInput formControlName="vihecleStatus" class="form-control custom-select" >
+                        <mat-option  *ngFor="let Status of VehicleStatus" [value]="Status"> {{Status}}</mat-option>
+                    </mat-select>
+                    </div>
+                   
+                    </div>
+                <div class="row">
+                    <div class="col">
+                      <label style="color:gray">License Price </label>
+                       <mat-select matInput formControlName="ccId" class="form-control custom-select" >
+                        <mat-option  *ngFor="let CCPrice of CCPrices" [value]="CCPrice"> {{CCPrice}}</mat-option>
+                    </mat-select>
+                    </div>
+                    <div class="col">
+                      <label style="color:gray">Technical Inspection  </label>
+                       <input type="text" formControlName="technicalInspection" class="form-control" placeholder="TechnicalInspection">
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="file" formControlName="vihecleImage" class="form-control" placeholder="VihecleImage">
+                         </div>
+                    </div>
+                    
+                    <button (click)="saveItem()"  type="submit" class="btn btn-primary">Create</button>
+                    
+                    </form>
+  
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>

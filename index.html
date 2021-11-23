@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>License</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+ <!--Image-->
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <link href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/plugins/font-awesome/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+
+        <!-- Theme Styles -->
+        <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+
+        <link href="./assets/css/connect.css" rel="stylesheet">
+        <link href="./assets/css/dark_theme.css" rel="stylesheet">
+        <link href="./assets/css/custom.css" rel="stylesheet">
+        <link href="./assets/plugins/DataTables/datatables.min.css" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
+        <link href="./assets/dist/material-cards-auto-height.css" rel="stylesheet">
+        <link href="./assets/dist/material-cards.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/aboutstyle.css">
+</head>
+<body class="mat-typography">
+
+
+    
+    
+<app-root></app-root>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="./assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+        <script src="./assets/plugins/bootstrap/popper.min.js"></script>
+        <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="./assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="./assets/plugins/apexcharts/dist/apexcharts.min.js"></script>
+        <script src="./assets/plugins/blockui/jquery.blockUI.js"></script>
+        <script src="./assets/plugins/flot/jquery.flot.min.js"></script>
+        <script src="./assets/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="./assets/plugins/flot/jquery.flot.symbol.min.js"></script>
+        <script src="./assets/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="./assets/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="./assets/js/connect.min.js"></script>
+        <script src="./assets/js/pages/dashboard.js"></script>
+        <script src="./assets/plugins/DataTables/datatables.min.js"></script>
+        <script src="./assets/js/pages/datatables.js"></script>
+        <script src="./assets/js/jquery.material-cards.js"></script>
+        <script src="assets/js/jquery.material-cards.min.js"></script>
+        <script src="../../assets/js/pages/mailbox.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js'></script>
+        <script src="assets/js/card.js"></script>
+        <script src='https://codepen.io/denic/pen/YzyPzKG.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+        <script src="assets/js/v.js"></script>
+        <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+        <script  src="./assets/js/script.js"></script>
+        <script>
+            AOS.init({
+                offsett:400,
+                duration:800
+            });
+          </script>
+        <script>
+         $(function() {
+        $('.material-card > .mc-btn-action').click(function () {
+            var card = $(this).parent('.material-card');
+            var icon = $(this).children('i');
+            icon.addClass('fa-spin-fast');
+
+            if (card.hasClass('mc-active')) {
+                card.removeClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-arrow-left')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-bars');
+
+                }, 800);
+            } else {
+                card.addClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-bars')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-arrow-left');
+
+                }, 800);
+            }
+        });
+    });
+</script>
+</body>
+</html>
